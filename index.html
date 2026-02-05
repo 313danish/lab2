@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Edge | Your Ultimate Fitness Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">VITALITY<span>EDGE</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Healthy Living</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <div class="cart-icon" id="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count">0</span>
+                </div>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Feel Great.<br>Body and Mind.</h1>
+            <p>Choose from hundreds of professional workouts, healthy recipes, and expert articles for a whole-body approach to wellness.</p>
+            <button class="btn-primary">Join Now</button>
+        </div>
+        <div class="hero-image">
+            <div class="trainer-circles">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle main-circle"></div>
+                <div class="circle c3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs">
+        <h2>Not sure where to start?</h2>
+        <p class="subtitle">Programs offer day-to-day guidance on an interactive calendar.</p>
+        
+        <div class="program-grid">
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(45deg, #2d5a27, #4e9445);">
+                    <h3>Free 2 Week Challenge</h3>
+                </div>
+                <div class="card-info">
+                    <h4>Vitality Free Challenge</h4>
+                    <p>Strength, Cardio, and Mobility</p>
+                    <span class="price">Free</span>
+                    <button class="add-to-cart" data-name="Free Challenge" data-price="0">Add to Bag</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(45deg, #4b2c7e, #7b5bc4);">
+                    <h3>Essentials Series</h3>
+                </div>
+                <div class="card-info">
+                    <h4>Beginner Total Body</h4>
+                    <p>Build your foundation</p>
+                    <span class="price">$5.99</span>
+                    <button class="add-to-cart" data-name="Essentials Series" data-price="5.99">Add to Bag</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background: linear-gradient(45deg, #8b2635, #d14d5d);">
+                    <h3>Level Up Strength</h3>
+                </div>
+                <div class="card-info">
+                    <h4>Advanced Muscle Growth</h4>
+                    <p>High intensity lifting</p>
+                    <span class="price">$12.99</span>
+                    <button class="add-to-cart" data-name="Level Up Strength" data-price="12.99">Add to Bag</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">VITALITY<span>EDGE</span></div>
+                <p>WORKOUT COMPLETE™</p>
+            </div>
+            <div class="footer-links">
+                <div class="col">
+                    <h4>Workouts</h4>
+                    <ul><li>Videos</li><li>Custom</li><li>Programs</li></ul>
+                </div>
+                <div class="col">
+                    <h4>About</h4>
+                    <ul><li>Careers</li><li>Our Team</li><li>Store</li></ul>
+                </div>
+                <div class="col">
+                    <h4>Membership</h4>
+                    <ul><li>Plus</li><li>Community</li><li>FAQ</li></ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Your Bag</h3>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <strong>Total: $<span id="total-price">0.00</span></strong>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
